@@ -3,7 +3,7 @@ import { RootState } from "../store"
 
 export const authSelector = (state: RootState) => state.auth
 
-export const liffIdSelector = createSelector(authSelector, (auth) => {
+export const liffIdTokenSelector = createSelector(authSelector, (auth) => {
   return auth.liffIdToken
 })
 
